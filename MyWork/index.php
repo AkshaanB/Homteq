@@ -6,7 +6,7 @@ echo "<title>$pagename</title>"; //display name of the page as window title
 echo "<body>";
 include ("headfile.html"); //include header layout file
 echo "<h4>$pagename</h4>"; //display name of the page on the web page
-$SQL = "SELECT prodId, prodName, prodPicNameSmall, prodDescripShort, prodPrice FROM Product";
+$SQL = "SELECT prodId, prodName, prodPicNameSmall, prodDescripShort, prodPrice FROM product";
 $exeSQL = mysqli_query($conn,$SQL) or die (mysqli_error($conn));
 
 echo "<table style='border:0px;'>";
