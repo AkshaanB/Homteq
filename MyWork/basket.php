@@ -29,7 +29,7 @@ if(isset($_POST['hidden_prodId'])){
         echo "<th></th>";
         foreach($_SESSION['basket'] as $index => $value){
             $SQL = "SELECT prodName, prodPrice, prodQuantity FROM Product WHERE prodId='$index'";
-            $exeSQL = $exeSQL = mysqli_query($conn,$SQL) or die (mysqli_error($conn));
+            $exeSQL =  mysqli_query($conn,$SQL) or die (mysqli_error($conn));
             $arrayp=mysqli_fetch_array($exeSQL);
                 echo "<tr>";
                 echo "<td>".$arrayp['prodName']."</td>";
