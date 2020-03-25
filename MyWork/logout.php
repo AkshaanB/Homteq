@@ -1,6 +1,6 @@
 <?php
 session_start();
-$pagename="Template"; //Create and populate a variable called $pagename
+$pagename="Make your home smart"; //Create and populate a variable called $pagename
 echo "<link rel=stylesheet type=text/css href=mystylesheet.css>"; //Call in stylesheet
 echo "<title>$pagename</title>"; //display name of the page as window title
 echo "<body>";
