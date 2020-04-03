@@ -52,7 +52,7 @@ if(isset($_POST['hidden_prodId'])){
             echo "<td>$$total</td>";
             echo "<td></td>";
         echo "</tr>";
-        echo "<table>";
+        echo "</table>";
     }else{
         echo "<br>";
         echo "<br>";
@@ -66,7 +66,7 @@ if(isset($_POST['hidden_prodId'])){
         echo "<td colspan='3'><b>Total</b></td>";
         echo "<td>$0.00</td>";
         echo "</tr>";
-        echo "<table>";
+        echo "</table>";
     }
 }else{
     echo "Current basket unchanged";
@@ -102,7 +102,7 @@ if(isset($_POST['hidden_prodId'])){
             echo "<td>$$total</td>";
             echo "<td></td>";
         echo "</tr>";
-        echo "<table>";
+        echo "</table>";
     }else{
         echo "<br>";
         echo "<br>";
@@ -116,7 +116,7 @@ if(isset($_POST['hidden_prodId'])){
         echo "<td colspan='3'><b>Total</b></td>";
         echo "<td>$0.00</td>";
         echo "</tr>";
-        echo "<table>";
+        echo "</table>";
     }
 }
 echo "<br>";
