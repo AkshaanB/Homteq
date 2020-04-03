@@ -26,9 +26,17 @@ if(!($email== $arrayu['userEmail'])){
         $_SESSION['fname'] = $arrayu['userFName'];
         $_SESSION['sname'] = $arrayu['userSName'];
         echo "<p>Hello, ".$_SESSION['fname']." ".$_SESSION['sname']."</p>";
-        echo "<p>You successfully logged in as homteq Customer!</p>";
-        echo "<p>Continue shopping for <a href=index.php>Home Tech</a></p>";
-        echo "<p>View your <a href=basket.php>Smart Basket</a></p>";
+        if($arrayu['userType']=='A'){
+            $_SESSION['user_type'] = 'Administrator';
+            echo "<p>You successfully logged in as homteq Administrator!</p>";
+            echo "<p>Continue to home page <a href=index.php>Home Tech</a></p>";
+        }
+        if($arrayu['userType']=='C'){
+            $_SESSION['user_type'] = 'Customer';
+            echo "<p>You successfully logged in as homteq Customer!</p>";
+            echo "<p>Continue shopping for <a href=index.php>Home Tech</a></p>";
+            echo "<p>View your <a href=basket.php>Smart Basket</a></p>";
+        }
     }
 }
 include("footfile.html"); //include head layout
