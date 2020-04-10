@@ -10,7 +10,7 @@ include ("detectlogin.php");
 echo "<h4>$pagename</h4>"; //display name of the page on the web page
 $currentdatetime = date('Y-m-d H:i:s');
 $userId = $_SESSION['userid'];
-$SQL = "INSERT INTO Orders (userId, orderDateTime, orderTotal) VALUES ($userId,'$currentdatetime',0.00)";
+$SQL = "INSERT INTO Orders (userId, orderDateTime, orderTotal, orderStatus) VALUES ($userId,'$currentdatetime',0.00,'Placed')";
 $exeSQL =  mysqli_query($conn,$SQL) or die (mysqli_error($conn));
 $error_number = mysqli_errno($conn);
 if((!mysqli_error($conn)) && $error_number==0){
